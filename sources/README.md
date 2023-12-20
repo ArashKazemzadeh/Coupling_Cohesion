@@ -2,8 +2,8 @@
 
 ```
 -- Design.Cohesion [LibClass]
-   -- make class name by cohesion level
+   -- make class by cohesion level
 
 -- Design.Coupling [LibClass]
-   -- make class name by couplig level
+   -- make class by couplig level
 ```

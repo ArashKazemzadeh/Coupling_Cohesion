@@ -1,4 +1,4 @@
-﻿namespace Design.Coupling;
+﻿namespace Design.Coupling.DataCoupling;
 
 public class DataProvider
 {

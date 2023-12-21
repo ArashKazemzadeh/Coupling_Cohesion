@@ -1,4 +1,4 @@
-namespace Design.Coupling;
+namespace Design.Coupling.StampCoupling;
 public class EmailSender
 {
     public void SendEmail(string recipient, string subject, string message)

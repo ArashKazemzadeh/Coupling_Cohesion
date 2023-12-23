@@ -1,14 +1,14 @@
 ﻿using DataCoupling;
 
-Product product = new()
-{
-    Id = 1,
-    Name = "Product 1",
-    Quantity = 152,
-};
+string iranIp = "Iran";
+string nonIranIp = "non-Iran";
 
-InventoryService inventoryService = new();
-SalesService salesService = new();
+ProductController productController = new();
+Framework framework = new();
+framework.Authentication(iranIp,
+    (context) => framework.ExceptionHandling(iranIp,
+    productController.GetAllProducts));
 
-inventoryService.AddToQuantity(product);
-salesService.SellProduct(product);
+framework.Authentication(nonIranIp,
+    (context) => framework.ExceptionHandling(nonIranIp,
+    productController.GetAllProducts));

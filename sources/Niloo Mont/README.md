@@ -15,3 +15,4 @@ I'm a dotnet enthusiast, I'm looking for chances to boost my know-how and abilit
 
 #### Implemented Cohesion Types:
 **Functional Cohesion** : ProductManager has everything it needs in its own scope.
+**Sequential Cohesion** : getPremiumCustomers get the output of GetAdultCustomers as input.

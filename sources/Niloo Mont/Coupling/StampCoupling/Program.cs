@@ -6,12 +6,13 @@ Product product1 = new()
     Name = "Bag",
     Quantity = 0,
 };
-Product product = new()
+Product product2 = new()
 {
-    Id = 1,
+    Id = 2,
     Name = "T-shirt",
     Quantity = 55,
 };
 
 SalesService salesService = new();
-salesService.SellProduct(product);
+salesService.SellProduct(product1);
+salesService.SellProduct(product2);

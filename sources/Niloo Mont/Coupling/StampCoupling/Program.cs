@@ -1,14 +1,17 @@
 ﻿using StampCoupling;
 
+Product product1 = new()
+{
+    Id = 1,
+    Name = "Bag",
+    Quantity = 0,
+};
 Product product = new()
 {
     Id = 1,
-    Name = "Product 1",
-    Quantity = 152,
+    Name = "T-shirt",
+    Quantity = 55,
 };
 
-InventoryService inventoryService = new();
 SalesService salesService = new();
-
-inventoryService.AddToQuantity(product);
 salesService.SellProduct(product);
